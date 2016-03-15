@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (mLeDevice.contains(device)){
                 int pre_index = mLeDevice.indexOf(device);
-                // update RSSI value, avoid bouncing 
+                // update RSSI value, avoid bouncing
                 if (Math.abs(result.getRssi() -mLeResult.get(pre_index).getRssi()) > 3){
                     mLeResult.set(pre_index, result);
                     Log.d(TAG, "update rssi index["+pre_index+"], rssi["+result.getRssi()+"]");
