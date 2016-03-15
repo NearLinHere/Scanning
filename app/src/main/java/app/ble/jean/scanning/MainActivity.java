@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
             // initialize
             mLeResult = new ArrayList<ScanResult>();        // RSSI data source
             mLeDevice = new ArrayList<BluetoothDevice>();   // devices data
-            inflater = MainActivity.this.getLayoutInflater();
+            inflater = MainActivity.this.getLayoutInflater();   //test
         }
 
         public void addResult(ScanResult result){
